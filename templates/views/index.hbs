@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5c922d39d1.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    {{>navbar}}
+    
+    {{!-- hero section start --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div
+                        class="col-md-10 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        <h1>I WILL HELP YOU TO</h1>
+                        <h1>GROW YOUR BUSINESS</h1>
+                        <p>Welcome To <span class="bold-style">My Website</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- hero section ends --}}
+
+    {{!-- projects start --}}
+    {{>projects}}
+    {{!-- projects ends --}}
+
+    {{!-- our services start --}}
+    {{>service}}
+    {{!-- our services ends --}}
+
+    {{!-- contact start --}}
+    {{>contact}}
+    {{!-- contact ends --}}
+
+    {{!-- contact start --}}
+    {{>footer}}
+    {{!-- contact ends --}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
