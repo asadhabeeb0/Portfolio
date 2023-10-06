@@ -23,18 +23,6 @@ app.get("/", (req,res) => {
     res.render("index");
 })
 
-
-app.post("/contact", async(req,res) => {
-    try{
-        // res.send(req.body);
-        const userData = new User(req.body);
-        await userData.save();
-        res.status(201).render("index");
-    }catch(error){
-        res.status(500).send(error);
-    }
-});
-
 app.listen(port, ()=>{
     console.log(`Server is listening at port number ${port}`);
 });
